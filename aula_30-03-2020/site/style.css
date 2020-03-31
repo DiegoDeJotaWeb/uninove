@@ -1,0 +1,61 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background: #747474;
+}
+
+#caixa-1 {
+    width: 70%;
+    float: left;
+    background: #dde6b5;
+    margin-bottom: 30px;
+}
+
+#caixa-2 {
+    width: 26%;
+    float: left;
+    background: #666;
+    margin: 0px 2%;
+    margin-bottom: 30px;
+}
+
+header {
+    background: #818e8c;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 28px;
+
+}
+
+nav ul {
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+p,
+h3 {
+    padding: 0 20px;
+}
+
+footer {
+    text-align: center;
+    background: #818e8c;
+    clear: both;
+    height: 40px;
+
+}
+
+footer p {
+    line-height: 40px;
+}
+
+img {
+    width: 60%;
+    margin: 10px 20%;
+    text-align: center;
+}

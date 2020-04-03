@@ -1,0 +1,9 @@
+{
+    "id":1000,
+    "name":"diego rodrigues",
+    "city":{
+        "name": "São Paulo",
+        "state": "SP"
+    },
+    "age":28
+}

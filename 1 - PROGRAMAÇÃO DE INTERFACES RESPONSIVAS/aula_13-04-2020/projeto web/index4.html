@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_13-04-2020 - Modelagem de interfaces - bootstrap</title>
+
+
+
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>picture e media queries</h1>
+        <br><br>
+        <picture>
+            <source srcset="img/imagem_pequena.jpg" media="(max-width:767px)">
+
+            <source srcset="img/imagem_media.jpg" media="(max-width:1199px)">
+
+            <source srcset="img/imagem.jpg">
+
+            <img src="img/imagem.jpg" alt="exemplo_imagem">
+        </picture>
+    </div>
+</body>
+
+</html>

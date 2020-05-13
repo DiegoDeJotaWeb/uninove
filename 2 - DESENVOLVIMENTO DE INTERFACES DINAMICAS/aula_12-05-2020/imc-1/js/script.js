@@ -1,5 +1,5 @@
 //alert('Olá mundo js');
-//length
+
 console.log('escrevendo algo no console do navegador');
 var titulo = document.querySelector("h1");
 
@@ -7,14 +7,7 @@ console.log(titulo); //imprime tudo html + conteudo
 console.log(titulo.textContent); //imprime só o conteudo
 titulo.textContent = "Aparecida Nitrição SA"; //modifica o conteudo do h1
 
-var pacientes = document.querySelectorAll('.paciente');
-
-
-for(var i=0;i < pacientes.length; i++){
-   
-    var paciente =  pacientes[i];
-    
-    
+var paciente = document.querySelector('#primeiro-paciente');
 var tdPeso = paciente.querySelector('.info-peso');
 var peso = tdPeso.textContent;
 var tdAltura = paciente.querySelector('.info-altura');
@@ -40,11 +33,8 @@ if (altura <= 0 || altura >= 3.00) {
 if (pesoEhValido && alturaEhValido) {
     // IMC  = PESO / (ALTURA X ALTURA)
     var imc = peso / (altura * altura);
-    tdIMC.textContent = imc.toFixed(2);
+    tdIMC.textContent = imc;
 }
-
-}
-
 
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de soma de dois numeros </title>
+</head>
+<body>
+   
+   <p>digite o tempo e a velocidade media da viagem:</p>
+   
+   <input type="text" name="tempo" id="tempoId" placeholder="digite o tempo">
+   <input type="text" name="velociadade" id="velMediaId" placeholder="digite a velocidade" >
+   
+   <input type="submit" id="btn-exibir" value="--- Calcular litros ---">
+   
+   <hr>
+   <p id="distancia"></p>
+   <p id="litrosConsumido"></p>
+   <script>
+    document.getElementById("btn-exibir").addEventListener("click", function(){
+        var distanciaPercorrida = Number(document.getElementById('tempoId').value)*
+        Number(document.getElementById('velMediaId').value);
+        
+        
+        var litrosTotais = distanciaPercorrida / 12;
+        document.getElementById("distancia").innerHTML='A distancia percorrida foi : ' + distanciaPercorrida.toFixed(2) + 'Km';
+        document.getElementById("litrosConsumido").innerHTML='Foi gasto um total de : ' + litrosTotais.toFixed(2) + 'L';
+    });
+    
+    </script>
+    
+</body>
+</html>

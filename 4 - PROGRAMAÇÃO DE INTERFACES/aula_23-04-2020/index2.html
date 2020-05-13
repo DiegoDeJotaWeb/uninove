@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <p>Calculo da tabuada</p>
+   <hr>
+   <p>.</p>
+   <input type="text" id="tempo" placeholder="Digite o tempo">
+   <input type="text" id="velocidade" placeholder="Digite o Velocidade">
+   
+   <button onclick="calcular()">calcular litros por viagem</button>
+   
+   <p id="resultado">0</p>
+   
+   
+   
+   <script>
+       
+       function mostrarTexto(texto){
+           document.getElementById('resultado').innerHTML = texto;
+       }
+       
+       function calcular(numero){
+          var tempo = document.getElementById('tempo').value;
+          var velocidade = document.getElementById('velocidade').value;
+           
+          var distancia = tempo * velocidade;
+           
+          var litros_usados = distancia / 12; 
+           
+           
+         var texto = "Velocidade media " + velocidade + "<br>" + 
+           
+                     "Tempo gasto na viagem " + tempo + "<br>" +
+           
+                     "Distancia percorrida " + distancia + "<br>" +
+              
+                     "Quantidade de litros usados " + litros_usados;
+           
+           mostrarTexto(texto);
+       }
+  
+   </script>
+    
+</body>
+</html>

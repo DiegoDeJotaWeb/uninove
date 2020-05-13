@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <p>Calculo da tabuada</p>
+   <hr>
+   <p>Apresentar no resultado as tabuadas de 1 a 10.</p>
+   <input type="text" name="num1" id="num1Id" placeholder="Digite o numero">
+   
+   <button onclick="executar_tabuada(Number(document.getElementById('num1Id').value));">calcular tabuada</button>
+   
+   <p id="resultado">0</p>
+   
+   
+   
+   <script>
+       
+       function mostrarTexto(texto){
+           document.getElementById('resultado').innerHTML =texto;
+       }
+       
+       function executar_tabuada(numero){
+           var resultado = 0;
+           var linha_final = "";
+           
+           for (var i =1; i<=10; i++){
+               resultado = numero * i;
+               
+               var linha = "" + i + " x " + numero + " = " + resultado + "<br>";
+               linha_final+=linha; // = linha_final = linha_final + linha
+           }
+           mostrarTexto(linha_final);
+       }
+  
+   </script>
+    
+</body>
+</html>

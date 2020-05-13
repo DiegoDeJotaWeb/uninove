@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title> Exemplo JavaScript – alert </title>
+</head>
+
+<body>
+<h2>Programa javascript que conta e mostra a quantidade de clicks no alert</h2>
+
+	<button id="btn-clicou">Clique</button>
+
+	
+	<script type="text/javascript">
+        var num = 0 ;
+        document.getElementById('btn-clicou').addEventListener('click',function(){
+            num ++
+            
+            
+            if(num == 1){
+               alert("Foi Clicado " + num + " vez");
+               }else{
+                   alert("Foi Clicado " + num + " vezes");
+               }
+          var txtvez = " ";  
+//            if(num==1) txtvez = "vez"
+//            else       txtvez = "vez"
+//             alert("Foi Clicado " + num + txtvez);
+        })
+        
+
+		
+
+	</script>
+</body>
+
+</html>

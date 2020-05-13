@@ -1,0 +1,233 @@
+--------------------------------------------*/
+#confModal .modal-dialog{
+  width: 748px;
+}
+#confModal .modal-content {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 2px solid #fff;
+}
+#confModal .modal-header {
+  color: #fff;
+  background-color: #0146cb;
+  border-bottom: none;
+}
+#confModal .modal-title {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#confModal .close {
+  color: #fff;
+  text-shadow: none;
+  opacity: .6;
+  font-size: 27px;
+  margin: 1px 7px 0 0;
+}
+#confModal .close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+}
+#confModal .modal-body {
+  padding: 0;
+}
+#confModal .modal-body h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #0146cb;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#confModal .checkout-info-box {
+  background-color: rgba(255, 191, 0, 0.2);
+  padding: 20px 30px;
+}
+#confModal .checkout-info-box h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #716d6e;
+}
+#confModal .checkout-info-box h3 i {
+  font-size: 23px;
+}
+#confModal .checkout-vehicle-info {
+  margin-top: 30px;
+}
+#confModal .location-date-info {
+  padding: 0 0 0 30px;
+  float: left;
+  max-width: 340px;
+}
+#confModal .vehicle-info {
+  padding: 0 30px 0 0;
+  float: right;
+  max-width: 360px;
+}
+#confModal .vehicle-info h3 {
+  float: left;
+  margin-right: 10px;
+}
+#confModal .vehicle-info a {
+  font-size: 12px;
+}
+#confModal .vehicle-info .vehicle-image {
+  width: 90%;
+}
+#confModal .info-box {
+  margin-bottom: 25px;
+}
+#confModal .info-box .glyphicon {
+  float: left;
+  font-size: 17px;
+}
+#confModal .info-box .info-box-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 3px 25px;
+}
+#confModal .info-box .info-box-description {
+  margin-left: 25px;
+  font-size: 14px;
+}
+#confModal .checkout-personal-info {
+  padding: 0 30px;
+}
+#confModal .checkout-personal-info .form-group {
+  float: left;
+  width: 335px;
+  min-height: 70px;
+}
+#confModal .checkout-personal-info .form-group.left {
+  margin-right: 7px;
+}
+#confModal .checkout-personal-info .form-group.right {
+  margin-left: 7px;
+}
+#confModal .checkout-personal-info .age {
+  float: left;
+  width: 140px;
+  min-height: 70px;
+}
+#confModal form .styled-select-age {
+  border: 2px solid #efe9e9;
+  height: 43px;
+  position: relative;
+}
+#confModal form .styled-select-age:after {
+  content: '';
+  background: #ffffff url('../img/dropdown-icon.png') no-repeat 5px 18px;
+  right: 0px;
+  top: 0px;
+  width: 29px;
+  height: 39px;
+  position: absolute;
+  pointer-events: none;
+}
+#confModal form .styled-select-age select {
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  background-image: none;
+  background: #fff;
+  -webkit-appearance: none;
+  padding: 9px 10px;
+  height: 39px;
+}
+#confModal form input {
+  background-color: #dbdbdb;
+  height: 45px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  line-height: 45px;
+  font-size: 18px;
+}
+#confModal form ::-webkit-input-placeholder {
+  font-size: 14px !important;
+}
+#confModal form :-moz-placeholder {
+  font-size: 14px !important;
+}
+#confModal form ::-moz-placeholder {
+  font-size: 14px !important;
+}
+#confModal form :-ms-input-placeholder {
+  font-size: 14px !important;
+}
+#confModal form .checkbox {
+  padding-left: 0;
+}
+#confModal form input[type=checkbox] {
+  display: none;
+}
+#confModal form .checkbox label {
+  font-size: 18px;
+}
+#confModal form .checkbox label:before {
+  content: "";
+  display: inline-block;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-color: #dbdbdb;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 24px;
+  float: left;
+}
+#confModal form input[type=checkbox]:checked + label:before {
+  content: "\2713";
+}
+#confModal .checkout-address-info {
+  padding: 0 30px;
+}
+#confModal .checkout-address-info .city {
+  float: left;
+  width: 335px;
+  margin-right: 7px;
+}
+#confModal .checkout-address-info .zip-code {
+  float: left;
+  width: 335px;
+  margin-left: 7px;
+}
+#confModal .newsletter {
+  padding: 0 30px;
+  margin: 30px 0;
+}
+#confModal .modal-footer {
+  background-color: #e3e2e2;
+}
+#confModal .modal-footer .btn {
+  font-size: 24px;
+  font-weight: 900;
+  background-color: #0146cb;
+  color: #fff;
+  border-radius: 0;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 15px;
+}
+#confModal .modal-footer .btn-border {
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  background-color: #fff;
+}
+#confModal .modal-footer .btn-yellow {
+  border-color: #ffd992;
+}
+#confModal .modal-footer .btn-yellow button {
+  background-color: #0146cb;
+}
+#confModal .modal-footer .btn-gray {
+  border-color: #b8b6b6;
+}
+#confModal .modal-footer .btn-gray button {
+  background-color: #716d6e;
+}

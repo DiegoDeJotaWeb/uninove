@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+    		<meta charset="utf-8">
+    		<title> Exemplo JavaScript – alert </title>
+	</head>
+	<body>
+	<P>Nome completo</P>
+	<input type="text" name="nomeName" id="nomeId" placeholder="Digite seu nome"><br>
+	<input type="button" value="Exibir nome" id="btn-exibir-nome" ><hr>
+
+
+	  <script type="text/javascript">
+	  	
+	document.getElementById('btn-exibir-nome').addEventListener('click', function(){
+		var nomeVar = document.getElementById('nomeId').value;
+        alert('O nome completo é: ' + nomeVar);
+    })     	</script>
+	</body>
+</html>

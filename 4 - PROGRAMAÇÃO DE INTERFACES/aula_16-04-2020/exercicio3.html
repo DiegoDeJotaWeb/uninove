@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Exemplo JavaScript – Calculo de média de 4 notas</title>
+</head>
+
+<body>
+    <P>Digite 4 notas</P>
+    <input type="text" id="nota1" placeholder="digite o primeiro nota"><br>
+    <input type="text" id="nota2" placeholder="digite o segundo nota"><br>
+    <input type="text" id="nota3" placeholder="digite o terceira nota"><br>
+    <input type="text" id="nota4" placeholder="digite o quarta nota">
+    <hr>
+
+    <button type="button" onclick="resultado()" id="btn-media">resultado</button>
+
+    <script type="text/javascript">
+        //        function resultado() {
+        //            var n1 = parseFloat(document.getElementById('nota1').value);
+        //            var n2 = parseFloat(document.getElementById('nota2').value);
+        //            var n3 = parseFloat(document.getElementById('nota3').value);
+        //            var n4 = parseFloat(document.getElementById('nota4').value);
+        //            var resultado = ((n1 + n2 + n3 + n4) / 4);
+        //
+        //            if (resultado < 5) {
+        //                alert(resultado + "reprovado");
+        //            }
+        //
+        //            if (resultado <= 6) {
+        //                alert(resultado + "recuperação");
+        //            }
+        //
+        //            if (resultado > 6) {
+        //                alert(resultado + "Aprovado");
+        //            }
+        //
+        //        }
+
+        document.getElementById("btn-media").addEventListener("click", function() {
+            var total_media = (Number(document.getElementById('nota1').value) +
+                Number(document.getElementById('nota2').value) +
+                Number(document.getElementById('nota3').value) +
+                Number(document.getElementById('nota4').value)) / 4;
+
+            if (total_media >= 7) {
+                alert('A media foi' + total_media + "(Aprovado)")
+            }else{
+                alert('A media foi' + total_media + "(reprovado)");
+            }
+            
+        });
+
+    </script>
+</body>
+
+</html>

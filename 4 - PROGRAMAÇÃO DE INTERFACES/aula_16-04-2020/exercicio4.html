@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+    		<meta charset="utf-8">
+    		<title> Exemplo JavaScript – Soma dois numeros  e mostra no alert </title>
+	</head>
+	<body>
+	<P>Digite 4 notas</P>
+	<input type="text" id="nota1" placeholder="digite o primeiro nota"><br>
+	<input type="text" id="nota2" placeholder="digite o segundo nota"><br>
+	<input type="text" id="nota3" placeholder="digite o primeiro nota"><br>
+	<input type="text" id="nota4" placeholder="digite o primeiro nota"><hr>
+
+	<button type="button" onclick="resultado()">resultado</button>
+
+	  <script type="text/javascript">
+
+function resultado(){
+var n1 = parseFloat(document.getElementById('nota1').value);
+var n2 = parseFloat(document.getElementById('nota2').value);
+var n3 = parseFloat(document.getElementById('nota3').value);
+var n4 = parseFloat(document.getElementById('nota4').value);
+var resultado = ((n1 + n2 + n3 + n4) / 4);
+
+if(resultado < 5){
+	var teste = resultado + "reprovado";
+	document.white(teste);
+}
+
+if(resultado <= 6){
+	document.white(resultado + "recuperação");
+}
+
+if(resultado > 6){
+	document.white(resultado + "Aprovado");
+}
+
+}
+			</script>
+	</body>
+</html>

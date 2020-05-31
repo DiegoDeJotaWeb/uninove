@@ -46,11 +46,6 @@ if (pesoEhValido && alturaEhValido) {
 }
 
 
-
-
-
-
-
 //console.log(paciente);
 //console.log(tdPeso);// html + conteudo
 //console.log(tdPeso.textContent);

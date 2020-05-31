@@ -4,15 +4,8 @@ Sistemas para Internet
 Memorial da América Latina
 Noturno
 
-Bruno Rodrigo do Nascimento RA 919120993
 Diego Rodrigues Joaquim RA 919202641
-<<<<<<< HEAD
-Marcio Oliveira RA 2217201517
-=======
+
+
 Alejandro Toledo RA 919113897
-<<<<<<< HEAD
 Jefferson Teles 2218109020
-=======
-Fernando Dias RA 919115288
->>>>>>> 73f42e0602e1fefd9a743be63ee1a55b4933a661
->>>>>>> d405249114db1c00ae611233e5287b90f683dcd8

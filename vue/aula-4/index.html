@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue - Aula 02 - renderização declarativa</title>
+</head>
+<body>
+    <div id="app">
+       <p v-if="isVisible">{{message}}</p>
+       <br>
+       <button v-on:click="toggle()">Mostar / Esconder</button> | <button v-on:dblclick="reverse()">Inverter</button>
+       <br>
+       <input type="text" name="message" id="message" v-model="message" placeholder="Message">
+    </div>                            
+    
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script>
+    app = new Vue({
+        el:'#app',
+        data:{
+            isVisible:true,
+            message: 'Jeniffer',
+        },
+        methods:{
+            toggle:function(){
+                this.isVisible= !this.isVisible;
+            },
+        reverse:function(){
+            this.message = this.message.split('').reverse().join('')
+        }
+        }
+    })
+    </script>
+</body>
+</html>

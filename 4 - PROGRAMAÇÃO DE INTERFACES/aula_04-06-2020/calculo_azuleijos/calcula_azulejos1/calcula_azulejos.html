@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculo de revestimento</title>
+	</head>
+	<body>
+		<p>Digite a largura e altura das paredes:</p>
+		
+		<input type="text" name="altura" id="alturaId" placeholder="Digite a altura em cm"/>
+		<br />
+		<input type="text" name="largura" id="larguraId" placeholder="Digite a largura em cm"/>
+		<br />
+		<input type="button" onclick="calcula_pecas()" value="--- Calcular N° de peças ---" id="calcular"/>
+		<hr />
+		<p>escolha o tipo de revestimento</p>
+		<input type="radio" name="Azulejo" id="30x30ID" value="1">30 x 30
+		<input type="radio" name="Azulejo" id="30x40ID" value="2">30 x 40 
+		<input type="radio" name="Azulejo" id="25x30ID" value="3">25 x 30 
+		<input type="radio" name="Azulejo" id="40x40ID" value="4">40 x 40 
+		<hr /> 
+		<p id="Npecas">Numero de peças : </p>
+		<script type="text/javascript"> 
+		
+		 function calcula_pecas() {
+		 if (document.getElementById("30x30ID").checked==true){
+				// executar contas com 30 x 30
+				var total_pecas = Number(document.getElementById('alturaId').value)/30 * 
+						   Number(document.getElementById('larguraId').value)/30;
+		 }
+		 else if ( document.getElementById("30x40ID").checked==true){
+				// contas com 30 x 40
+				var total_pecas = Number(document.getElementById('alturaId').value)/30 * 
+						   Number(document.getElementById('larguraId').value)/40;
+				}
+			    else if ( document.getElementById("25x30ID").checked==true){
+					// contas com 25 x 30
+					var total_pecas = Number(document.getElementById('alturaId').value)/25 * 
+						   Number(document.getElementById('larguraId').value)/30;
+					}
+					else{
+						// contas com 40x40ID
+						var total_pecas = Number(document.getElementById('alturaId').value)/40 * 
+						   Number(document.getElementById('larguraId').value)/40;
+						}
+		  document.getElementById("Npecas").innerHTML="Numero de peças : " + total_pecas.toFixed(0);
+		};
+		</script>
+	</body>
+</html>

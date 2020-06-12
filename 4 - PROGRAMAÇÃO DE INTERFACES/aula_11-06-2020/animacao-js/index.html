@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="rocket-master/rocket.css" >
+</head>
+<body>
+   
+   <img onclick="teste_rocket(this)" class="image1" src="img/dado0.png" >
+   <img onclick="teste_rocket2()" class="image2" src="img/dado1.png">
+   
+   <script src="rocket-master/rocket.js"></script>
+   <script>
+    function teste_rocket(image){
+        image2 = document.getElementsByClassName("image1");
+        //rocketcss(image,'.yourTargetClass', 'rocketPulse');
+	//$('.yourTargetClass').addClass('targetPulse')
+        image = document.getElementsByClassName("image2");
+        image.classList.add("targetPulse");
+    }
+       
+       function teste_rocket2(image){
+        
+    }
+    
+    </script>
+   
+
+</body>
+</html>

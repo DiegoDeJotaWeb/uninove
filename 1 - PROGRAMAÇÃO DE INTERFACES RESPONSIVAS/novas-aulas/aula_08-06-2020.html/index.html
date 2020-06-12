@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_27-04-2020 - Modelagem de interfaces - bootstrap</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container text-center">
+
+        <div id="sucesso" class=" d-none alert alert-success">
+            <strong>Sucesso! Enviado com sucesso!!</strong>
+        </div>
+
+        <div id="erro" class="d-none alert alert-danger">
+            <strong>Erro! Favor preencher todos os campos!</strong>
+        </div>
+        <h2>Exemplode navegação</h2>
+
+
+        <div class="row">
+            <div class="col-md-8">
+                <form role="form" action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nome</span>
+                        </div>
+                        <input id="Nome" type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Endereço</span>
+                        </div>
+                        <input id="Endereco" type="text" class="form-control">
+                    </div>
+                    <input class="btn btn-success" onclick="validar()" type="button" value="Enviar">
+                </form>
+                <h2>d-none</h2>
+                <p>É a class do bootstrap para dar display none</p>
+
+                <hr>
+
+
+                <h2>Botões </h2>
+                <button class="btn btn-default">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-link">Link</button>
+
+
+                <hr>
+                <h2>Listar cadastro</h2>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Endereço</th>
+                            <th>Detalhes | Editar | Deletar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Diego Rodrigues</td>
+                        <td>Endereço teste</td>
+                        <td>
+                            <button class="btn btn-info">Detalhe</button>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Deletar</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h2>Tamanho dos botões</h2>
+                <button class="btn btn-primary btn-sm">Pequeno</button>
+                <button class="btn btn-primary btn-sm">Medio</button>
+                <button class="btn btn-primary btn-sm">Grande</button>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function validar() {
+            var nome = $('#nome');
+            var sucesso = $('#sucesso');
+            var erro = $('#erro');
+
+            // Garantir que as duas divs (blocos ) tenham a class  
+            sucesso.addClass("d-none");
+            erro.addClass("d-none");
+            if (nome.val() == "") {
+                erro.removeClass("d-none");
+            } else {
+                sucesso.removeClass("d-none");
+            }
+            var nome = $('#endereco');
+        }
+    </script>
+</body>
+
+</html>

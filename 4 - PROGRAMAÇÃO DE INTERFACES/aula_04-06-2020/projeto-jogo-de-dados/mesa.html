@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .mesa{
+/*            background-image: url(img/mesa.jpg);*/
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            margin: 100px auto 0 auto;
+            border: 2px solid #000;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .vencedor{
+            text-align: center;
+            margin: 30px 0px;        }
+        
+        .nick{
+            font-size: 40px;
+            color: white;
+        }
+        
+        #placar1,#placar2{
+            font-size: 40px;
+            color: white;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <h1 class="titulo">Jogos de dados</h1>
+ 
+    
+    <div class="mesa" id="mesa">
+        <div class="jogador">
+           <div id="placar1">10</div>
+            <div class="dado" id="dado1"><img src="img/dado0.png" alt="" id="d1"></div>
+            
+            <span class="nick" id="jogador1"> Jogador 1</span>
+            <p> <a onclick="cadastrar1()">CADASTRAR OUTRO JOGADOR</a></p>
+        </div>
+        
+        <div class="jogador">
+           <div id="placar2">10</div>
+            <div class="dado" id="dado2"><img src="img/dado0.png" alt="" id="d2" ></div>
+            
+             <span class="nick" id="jogador2"> Jogador 2</span>
+             <p><a onclick="cadastrar2()"> CADASTRAR OUTRO JOGADOR</a></p>
+            
+        </div>
+
+        <div id="alerta"></div>
+        
+        <div class="btn-all-jogo">
+        <button onclick="jogar()" id="btn-jogar">Jogar</button>
+        <button onclick="reinicarJogo()" id="reiniciar-jogo" style="display: none;">Reiniciar</button>
+        
+        
+        </div>
+    </div>
+   <h3 class="vencedor">VENCEDOR DA RODADA: <br> <span id="resultado"></span></h3>
+   <h3 class="vencedor">VENCEDOR DA PARTIDA: <br> <span id="resultado-partida"></span></h3>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

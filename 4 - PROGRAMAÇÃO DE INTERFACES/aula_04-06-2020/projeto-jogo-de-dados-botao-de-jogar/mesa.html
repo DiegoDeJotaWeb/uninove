@@ -11,7 +11,7 @@
             background-position: center;
             background-size: cover;
             width: 50%;
-            margin: 100px auto 0 auto;
+            margin: 50px auto 0 auto;
             border: 2px solid #000;
             text-align: center;
             padding: 50px;
@@ -30,6 +30,10 @@
             font-size: 40px;
             color: white;
         }
+        
+        .jogador p a{
+            cursor: pointer;
+        }
        
     </style>
     
@@ -37,13 +41,14 @@
 <body>
     <h1 class="titulo">Jogos de dados</h1>
  
-    
+    <div id="alerta" class="vencedor"></div>
     <div class="mesa" id="mesa">
         <div class="jogador">
            <div id="placar1">10</div>
             <div class="dado" id="dado1"><img src="img/dado0.png" alt="" id="d1"></div>
             
             <span class="nick" id="jogador1"> Jogador 1</span>
+            <button onclick="jogar()" id="btn-jogar">Jogar</button>
             <p> <a onclick="cadastrar1()">CADASTRAR OUTRO JOGADOR</a></p>
         </div>
         
@@ -52,11 +57,12 @@
             <div class="dado" id="dado2"><img src="img/dado0.png" alt="" id="d2" ></div>
             
              <span class="nick" id="jogador2"> Jogador 2</span>
+             <button onclick="jogar()" id="btn-jogar">Jogar</button>
              <p><a onclick="cadastrar2()"> CADASTRAR OUTRO JOGADOR</a></p>
             
         </div>
 
-        <div id="alerta"></div>
+        
         
         <div class="btn-all-jogo">
         <button onclick="jogar()" id="btn-jogar">Jogar</button>

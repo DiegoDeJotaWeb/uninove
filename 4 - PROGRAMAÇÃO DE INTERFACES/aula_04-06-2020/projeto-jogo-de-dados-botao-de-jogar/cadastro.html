@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    
+
+    <form action="mesa.html" method="get">
+       <h1 class="tituloCadastro">JOGO DE DADOS</h1>
+        <div class="jogadoresCaixa">
+            <div class="caixaJogadores">
+                <label for="">Jogador 1</label>
+                <input type="radio" name="selecionaJogador" id="j1">
+                <label for="">Jogador 2</label>
+                <input type="radio" name="selecionaJogador" id="j2">
+            </div>
+
+            <div id="competidor1">
+                <div class="caixa">
+                    <label for="" class="label">Nick 1</label>
+                    <input type="text" name="nick1" id="nick1">
+                </div>
+                <div class="caixa">
+                    <label for="" class="label">Idade</label>
+                    <input type="text" name="idade1" id="idade1">
+                </div>
+            </div>
+
+            <div id="competidor2">
+                <div class="caixa">
+                    <label for="" class="label">Nick 2</label>
+                    <input type="text" name="nick2" id="nick2">
+                </div>
+                <div class="caixa">
+                    <label for="" class="label">Idade</label>
+                    <input type="text" name="idade2" id="idade2">
+                </div>
+            </div>
+        </div>
+        <div class="caixa escolha-mesa">
+            <label for="" class="label">Escolha a mesa</label>
+            <select name="mesa" id="mesa">
+                <option value=""></option>
+                <option value="0">Escolha a mesa</option>
+                <option value="1">Mesa 1</option>
+                <option value="2">Mesa 2</option>
+                <option value="3">Mesa 3</option>
+                <option value="4">Mesa 4</option>
+                <option value="5">Mesa 5</option>
+            </select>
+        </div>
+
+        <button>Cadastro</button>
+
+    </form>
+
+    <script>
+        document.getElementById("competidor1").style.display = "none";
+        document.getElementById("competidor2").style.display = "none";
+        var j1 = document.getElementById("j1");
+
+        j1.addEventListener('click', function() {
+            document.getElementById("competidor1").style.display = "block";
+            document.getElementById("competidor2").style.display = "none";
+        });
+
+        var j2 = document.getElementById("j2");
+        j2.addEventListener('click', function() {
+            document.getElementById("competidor2").style.display = "block";
+            document.getElementById("competidor1").style.display = "none";
+
+        });
+
+
+
+
+        var url1 = window.location.href;
+        var url1_decode = decodeURIComponent(url1);
+        var parametrosDaUrl1 = url1_decode.split("?")[1];
+        var listaDeParametros1 = parametrosDaUrl1.split("&");
+        var hash1 = {};
+        for (var i = 0; i < listaDeParametros1.length; i++) {
+            var parametro1 = listaDeParametros1[i].split("=");
+            var chave1 = parametro1[0];
+            var valor1 = parametro1[1];
+            hash1[chave1] = valor1;
+        }
+        var j1 = hash1["j1"];
+        var nick1 = hash1["nick1"];
+        var idade1 = hash1["idade1"];
+
+        var j2 = hash1["j2"];
+        var nick2 = hash1["nick2"];
+        var idade2 = hash1["idade2"];
+
+        var mesa = hash1["mesa"];
+
+        if (hash1["nick1"] == "") {
+
+        } else {
+
+            document.getElementById("j1").value = j1;
+            document.getElementById("j2").value = j2;
+
+            document.getElementById("nick1").value = nick1;
+            document.getElementById("idade1").value = idade1;
+
+            document.getElementById("nick2").value = nick2;
+            document.getElementById("idade2").value = idade2;
+
+            document.getElementById("mesa").value = mesa;
+            if (j1 == "on") {
+                document.getElementById("j1").checked = true;
+                document.getElementById("competidor1").style.display = "block";
+
+            }
+            if (j2 == "on") {
+                document.getElementById("j2").checked = true;
+                document.getElementById("competidor2").style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

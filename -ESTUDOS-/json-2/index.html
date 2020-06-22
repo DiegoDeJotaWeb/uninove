@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <p>Acesse um objeto JavaScript:</p>
+
+<p id="demo"></p>
+
+<script>
+var myObj, x;
+myObj = { name: "John", age: 30, city: "New York" };
+x = myObj.name;
+document.getElementById("demo").innerHTML = x;
+</script>
+   
+   <p>Acesse um objeto JavaScript usando a notação de colchete:</p>
+
+<p id="demo1"></p>
+
+<script>
+var myObj, x;
+myObj = { name: "John", age: 30, city: "New York" };
+x = myObj["name"];
+document.getElementById("demo1").innerHTML = x;
+</script>
+    
+</body>
+</html>

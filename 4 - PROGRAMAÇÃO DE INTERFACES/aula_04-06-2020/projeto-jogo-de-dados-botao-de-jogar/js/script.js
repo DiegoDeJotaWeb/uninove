@@ -133,7 +133,7 @@ if (hash["nick1"] == "" || hash["nick2"] == "") {
         if (dado1 < dado2) {
             document.getElementById("resultado").innerHTML = nick2 + " ganhou!!";
             placarJogador2--;
-            document.getElementById("placar2").innerHTML = placarJogador2;
+            document.getElementById("placar1").innerHTML = placarJogador2;
 
         }
         
@@ -141,7 +141,7 @@ if (hash["nick1"] == "" || hash["nick2"] == "") {
         if (dado1 > dado2) {
             document.getElementById("resultado").innerHTML = nick1 + " ganhou!!";
             placarJogador1--;
-            document.getElementById("placar1").innerHTML = placarJogador1;
+            document.getElementById("placar2").innerHTML = placarJogador1;
 
         }
 
@@ -158,10 +158,10 @@ if (hash["nick1"] == "" || hash["nick2"] == "") {
        
 
 if(placarJogador1 == 0 ){
-     document.getElementById("resultado-partida").innerHTML = nick2;
+     document.getElementById("resultado-partida").innerHTML = nick1;
 }
 if(placarJogador2 == 0 ){
-     document.getElementById("resultado-partida").innerHTML = nick1;
+     document.getElementById("resultado-partida").innerHTML = nick2;
 }
     }
 }
@@ -207,4 +207,6 @@ function reinicarJogo(){
     
     document.getElementById("btn-jogar").style.display = "block";
     document.getElementById("reiniciar-jogo").style.display = "none";
+    
+    document.getElementById("resultado-partida").innerHTML = "";
 }

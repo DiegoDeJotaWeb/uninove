@@ -1,0 +1,108 @@
+/*Pág Mesa */
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+.jogador {
+    width: 50%;
+    float: left;
+}
+
+.dado {
+    width: 40px;
+    height: 40px;
+    /*            background: red;*/
+    margin: 120px auto 30px auto;
+}
+
+.dado img {
+    width: 100%;
+
+}
+
+.nick {
+    margin: 30px;
+    
+}
+a{
+  text-decoration: none;  
+}
+a .nick{
+    
+  
+    overflow: hidden;
+/*    padding: 20px 0px;*/
+}
+
+.btn-all-jogo {
+    margin: 20px 30px;
+    clear: both;
+    padding: 100px 0 0 0;
+}
+
+.titulo {
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+        form{
+            width:  50%;
+            margin: 100px auto 0 auto;
+/*            border: 1px solid #000;*/
+            padding: 50px;
+        }
+        
+        .label{
+            width: 100%;
+            float:left; 
+            display:block;
+        }
+        
+        input[type=text]{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .caixa{
+            width: 100%;
+            margin: 10px 0;
+        }
+        .caixaJogadores{
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
+        input[type=checkbox]{
+            margin: 0 5px;
+        }
+        
+        select{
+           width: 100%;
+        }
+        button{
+            float: right;
+        }
+        .escolha-mesa{
+            border: 2px losid black;
+            padding: 20px 10px;
+            background: #f4f4f4;
+        }
+        
+        button{
+            padding: 10px;
+            border: 0;
+            width: 100%;
+        }
+        .jogadoresCaixa {
+            padding: 10px;
+            background: #f4f4f4;
+        }
+        .tituloCadastro{
+            background: #f4f4f4;
+            width: 100%;
+            text-align: center;
+            
+        }

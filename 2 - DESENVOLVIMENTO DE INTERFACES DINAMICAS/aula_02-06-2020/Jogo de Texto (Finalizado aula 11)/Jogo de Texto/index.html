@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo de Texto</title>
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="center">Jogo de Texto</h1>
+		<p class="frase left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perspiciatis adipisci placeat, corrupti blanditiis modi nihil velit necessitatibus dolore reprehenderit, hic deserunt! Voluptatibus odio ab veniam, minima repellendus consequuntur recusandae.</p>
+		<ul class="informacoes center">
+			<li>
+				<i class="material-icons icones">description</i>
+				<span id="tamanho-frase">30</span> palavras
+			</li>
+			<li>
+				<i class="material-icons icones">query_builder</i>
+				<span id="tempo-digitacao">10</span> segundos
+			</li>
+		</ul>
+		<textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+		
+		<div class="botoes">
+			  <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="botao-reiniciar">restore</i></a>
+		</div>
+
+		<ul class="center">
+			<li><span id="contador-caracteres">0</span> caracteres</li>
+			<li><span id="contador-palavras">0</span> palavras</li>
+		</ul>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

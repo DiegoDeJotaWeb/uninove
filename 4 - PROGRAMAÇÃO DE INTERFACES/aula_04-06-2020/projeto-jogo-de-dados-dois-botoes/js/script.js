@@ -205,14 +205,14 @@ if (hash["nick2"] == "") {
         //  QUEM GANHOU - PLACAR 
         //  O JOGADOR 2 GANHOU
         if (dado1 < dado2) {
-            document.getElementById("resultado").innerHTML = nick2 + " ganhou!!";
+            document.getElementById("resultado").innerHTML = nick2 ;
             placarJogador2--;
             document.getElementById("placar1").innerHTML = placarJogador2;
         }
 
         //   O JOGADOR 1 GANHOU 
         if (dado1 > dado2) {
-            document.getElementById("resultado").innerHTML = nick1 + " ganhou!!";
+            document.getElementById("resultado").innerHTML = nick1 ;
             placarJogador1--;
             document.getElementById("placar2").innerHTML = placarJogador1;
         }
